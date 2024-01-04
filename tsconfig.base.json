@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mfe-demo-jin/libs": ["libs/src/index.ts"],
       "about/Module": ["about/src/remote-entry.ts"]
     }
   },

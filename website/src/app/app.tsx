@@ -1,30 +1,22 @@
 import * as React from 'react';
 
-import NxWelcome from './nx-welcome';
-
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './components/navbar/navbar';
+import HomePage from './pages/home/home';
 
 const About = React.lazy(() => import('about/Module'));
 
 export function App() {
-  return (
-    <React.Suspense fallback={null}>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
-      <Routes>
-        <Route path="/" element={<NxWelcome title="website" />} />
-
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </React.Suspense>
-  );
+    return (
+        <React.Suspense fallback={null}>
+            <NavBar />
+        
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </React.Suspense>
+    );
 }
 
 export default App;

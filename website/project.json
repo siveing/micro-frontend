@@ -18,7 +18,8 @@
         "assets": ["website/src/favicon.ico", "website/src/assets"],
         "styles": ["website/src/styles.css"],
         "scripts": [],
-        "webpackConfig": "website/webpack.config.ts"
+        "webpackConfig": "website/webpack.config.ts",
+        "postcssConfig": "website/postcss.config.js"
       },
       "configurations": {
         "development": {
