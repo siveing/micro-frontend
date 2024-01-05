@@ -2,7 +2,11 @@
   "name": "@mfe-demo-jin/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve website --devRemotes=about",
+    "build": "nx build website",
+    "graph": "nx graph"
+  },
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.17",

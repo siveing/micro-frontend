@@ -1,18 +1,21 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
-const navigation = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'About', href: '/about', current: false },
-]
 
 function classNames(...classes: any) {
     return classes.filter(Boolean).join(' ')
 }
 
 export default function NavBar() {
+    const router = useLocation();
+
+    const navigation = [
+        { name: 'Home', href: '/', current: router.pathname == "/" },
+        { name: 'About', href: '/about', current: router.pathname == "/about" },
+        { name: 'About Component', href: '/about-component', current: router.pathname == "/about-component" },
+    ];
+
     return (
         <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
