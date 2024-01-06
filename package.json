@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nx serve website --devRemotes=about,faq",
     "prod" : "nx reset && nx serve website",
-    "build": "nx build website",
+    "build": "nx reset && nx build website",
     "graph": "nx graph"
   },
   "private": true,
