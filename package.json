@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve website --devRemotes=about,faq",
-    "prod" : "nx serve website",
+    "prod" : "nx reset && nx serve website",
     "build": "nx build website",
     "graph": "nx graph"
   },

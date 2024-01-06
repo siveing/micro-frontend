@@ -1,3 +1,0 @@
-[build]
-command = "nx build website && nx build about && nx build faq"
-publish = "dist/website"
