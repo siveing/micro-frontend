@@ -11,12 +11,13 @@ export const CounterNumber = () => {
     }, [])
 
     return (
-        <div style={{
-            width: '100%',
-            textAlign: 'center',
-            background: 'wheat',
-            padding: 30
-        }}>
+        <div
+            className='bg-red-200'
+            style={{
+                width: '100%',
+                textAlign: 'center',
+                padding: 30
+            }}>
             {`CounterNumber ${tickedTimes}`}
             {/* {`CounterNumberDot ${'.'.repeat(tickedTimes)}`} */}
         </div>
