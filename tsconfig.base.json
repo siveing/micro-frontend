@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@mfe-demo-jin/libs": ["libs/src/index.ts"],
-      "about/Module": ["about/src/remote-entry.ts"]
+      "about/Module": ["about/src/remote-entry.ts"],
+      "faq/Module": ["faq/src/remote-entry.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -5,6 +5,7 @@ import NavBar from './components/navbar/navbar';
 import HomePage from './pages/home/home';
 
 const About = React.lazy(() => import('about/Module'));
+const Faq = React.lazy(() => import('faq/Module'));
 const ListComponent = React.lazy(async () => await import('about/Module').then(module => ({ default: module.ListComponent })));
 
 export function App() {
@@ -16,6 +17,7 @@ export function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/about-component" element={<ListComponent />} />
+                <Route path="/faq" element={<Faq />} />
                 <Route path="*" element={<>Page NotFound</>} />
             </Routes>
         </React.Suspense>

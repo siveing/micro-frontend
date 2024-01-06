@@ -14,6 +14,7 @@ export default function NavBar() {
         { name: 'Home', href: '/', current: router.pathname == "/" },
         { name: 'About', href: '/about', current: router.pathname == "/about" },
         { name: 'About Component', href: '/about-component', current: router.pathname == "/about-component" },
+        { name: 'Faq', href: '/faq', current: router.pathname == "/faq" },
     ];
 
     return (
