@@ -14,7 +14,8 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['about', 'faq'],
+  // remotes: ['about', 'faq'],
+  remotes: [['about', 'https://mfe-jin-about.netlify.app/']]
 };
 
 export default config;
