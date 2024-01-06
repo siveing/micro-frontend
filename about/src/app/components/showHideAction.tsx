@@ -12,7 +12,7 @@ export function ShowHideAction(props: showHideProps) {
 
     return (
         <div>
-            <button onClick={handleClick} className="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold text-white sm:w-auto bg-cyan-500 shadow-lg shadow-cyan-500/50">{show ? 'Hide' : 'Show'}</button>
+            <button onClick={handleClick} className="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold text-white sm:w-auto bg-cyan-500 shadow-lg shadow-cyan-500/50 mb-2">{show ? 'Hide' : 'Show'}</button>
             {show && (
                 <div>
                     <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">

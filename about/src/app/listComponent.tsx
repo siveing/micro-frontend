@@ -6,7 +6,6 @@ export const ListComponent = () => {
         <div style={{
             width: '100%',
             textAlign: 'center',
-            background: 'wheat',
             padding: 30
         }}>
             <CounterNumber />
