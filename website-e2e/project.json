@@ -10,7 +10,7 @@
         "cypressConfig": "website-e2e/cypress.config.ts",
         "testingType": "e2e",
         "devServerTarget": "website:serve",
-        "baseUrl": "http://localhost:4200"
+        "baseUrl": "https://mfe-jin.netlify.app/"
       },
       "configurations": {
         "production": {

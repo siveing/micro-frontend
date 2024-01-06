@@ -87,6 +87,12 @@
   "projects": {
     "website": {
       "tags": []
+    },
+    "about": {
+      "tags": []
+    },
+    "faq": {
+      "tags": []
     }
   }
 }
