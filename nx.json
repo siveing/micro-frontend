@@ -3,13 +3,8 @@
   "targetDefaults": {
     "build": {
       "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production"
-      ]
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     },
     "lint": {
       "cache": true,
@@ -20,36 +15,16 @@
         "{workspaceRoot}/eslint.config.js"
       ]
     },
-    "e2e": {
-      "cache": true,
-      "inputs": [
-        "default",
-        "^production"
-      ]
-    },
+    "e2e": { "cache": true, "inputs": ["default", "^production"] },
     "@nx/jest:jest": {
       "cache": true,
-      "inputs": [
-        "default",
-        "^production",
-        "{workspaceRoot}/jest.preset.js"
-      ],
-      "options": {
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
-      }
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
+      "options": { "passWithNoTests": true },
+      "configurations": { "ci": { "ci": true, "codeCoverage": true } }
     }
   },
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
       "!{projectRoot}/cypress/**/*",
@@ -65,7 +40,7 @@
     ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "NTk2OTNkNzYtMGM5Mi00MDk1LTkxZjQtNjQyMjM4MDM1MTRmfHJlYWQtd3JpdGU=",
+  "nxCloudAccessToken": "MmNiYzBiNTYtNmI1YS00OWMwLWIzNDMtN2M5OGUwNjA5NGI3fHJlYWQtd3JpdGU=",
   "generators": {
     "@nx/react": {
       "application": {
@@ -74,9 +49,7 @@
         "bundler": "webpack",
         "babel": true
       },
-      "component": {
-        "style": "css"
-      },
+      "component": { "style": "css" },
       "library": {
         "style": "css",
         "linter": "eslint",
@@ -85,14 +58,8 @@
     }
   },
   "projects": {
-    "website": {
-      "tags": []
-    },
-    "about": {
-      "tags": []
-    },
-    "faq": {
-      "tags": []
-    }
+    "website": { "tags": [] },
+    "about": { "tags": [] },
+    "faq": { "tags": [] }
   }
 }
